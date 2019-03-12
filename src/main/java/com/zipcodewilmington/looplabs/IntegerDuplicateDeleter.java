@@ -26,7 +26,7 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
     public Integer[] removeDuplicatesExactly(int exactNumberOfDuplications) {
         Mylist mylist = new Mylist(array);
         for (Object obj : array) {
-            if (mylist.getNumberOfOccurences(obj).equals(exactNumberOfDuplications)) {
+            if (mylist.getNumberOfOccurences(obj)== (exactNumberOfDuplications)) {
                 mylist.removeEverything(obj);
             }
         }

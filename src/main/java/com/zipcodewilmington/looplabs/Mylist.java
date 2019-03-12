@@ -27,8 +27,8 @@ public class Mylist {
 
     public void remove(int input) {
         Object valueToRemove = objArr[input];
-        for (int i = 0; i < objArr.length; i++) {
-            objArr[i ] = objArr[i];
+        for (int i = input+1; i < objArr.length; i++) {
+            objArr[i-1] = objArr[i];
         }
         objArr[objArr.length - 1] = valueToRemove;
         objArr = Arrays.copyOf(objArr, objArr.length - 1);
